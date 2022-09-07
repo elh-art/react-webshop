@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/TopMenu.css'
 
 const TopMenu = () => {
   return (
@@ -21,7 +22,7 @@ const TopMenu = () => {
             <a href="#">Contact us</a>
             <a href="#">FAQs</a>
           </div>
-          <div className="socialmedia">
+          <div className="socialmedia ms-4"> 
             <a href="#"><i className="fa-brands fa-twitter"></i></a>
             <a href="#"><i className="fa-brands fa-facebook"></i></a>
             <a href="#"><i className="fa-brands fa-linkedin"></i></a>

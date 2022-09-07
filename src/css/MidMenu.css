@@ -1,0 +1,93 @@
+.mid-menu .container .company-logo h1 {
+  font-family: var(--font-jost);
+}
+
+  .mid-menu .container .company-logo h1 img {
+    margin-bottom: 5px;
+  }
+
+.mid-menu .container .search-bar {
+  max-width: 540px;
+  height: 47px;
+}
+
+  .mid-menu .container .search-bar input {
+    border-radius: 23.5px 0 0 23.5px;
+    border: 2px solid var(--color-gray);
+    border-right: none;
+    width: 350px;
+    outline: none;
+  }
+  
+  .mid-menu .container .search-bar .dropdown button {
+      width: 150px;
+      height: 47px;
+      background-color: var(--color-white);
+      border-radius: 0;
+      color: var(--color-dark-theme);
+      border: 2px solid var(--color-gray);
+    }
+
+    .mid-menu .container .search-bar .dropdown button:focus {
+      box-shadow: none;
+    }
+
+    .mid-menu .container .search-bar .dropdown button i {
+      color: var(--color-instock);
+      font-weight: 700;
+    }
+
+  .mid-menu .container .search-bar .magnifier {
+    border-radius: 0 50% 50% 0;
+    width: 47px;
+  }
+
+    .mid-menu .container .search-bar .magnifier .fa-magnifying-glass:active {
+      color: #fe4545;
+    }
+
+.mid-menu .container .shopping {
+  height: 106px;
+}
+
+  .mid-menu .container .shopping a {
+    margin-left: 25px;
+    padding: 0 4px 0 4px;
+    color: var(--color-dark-theme);
+    font-size: 22px;
+    text-decoration: none;
+  }
+ 
+  .mid-menu .container .shopping .my-account span {
+    width: 100px;
+  }
+
+  .mid-menu .container .shopping a:hover {
+    color: var(--color-outofstock);
+  }
+
+  .mid-menu .container .shopping .shopping-height {
+    height: 22px;
+    width: 33px;
+  }
+
+    .shoppingamount {
+      top: -8px;
+      right: -11px;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color: var(--color-theme);
+      color: var(--color-white);
+      font-size: 8px;
+      text-align: center;
+      line-height: 18px;
+    }
+
+.main-menu {
+  border-top: 1px solid var(--color-gray);  
+}
+
+  .main-menu .dropdown button {
+    border-radius: 0;
+  }

@@ -1,0 +1,7 @@
+.showcase {
+  background-color: var(--color-light-gray);
+}
+
+  .showcase .container .showcase_content p {
+    width: 380px;
+  }
