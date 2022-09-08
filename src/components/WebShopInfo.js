@@ -30,8 +30,8 @@ const WebShopInfo = () => {
             <img className="img-top me-3" src={clockIconWhite} alt="a clock icon"/>
           </div>
           <div>
-              <h3><strong>27/7 support</strong></h3>
-              <p>For any inquiry, we are available 24 hours every day</p>
+            <h3><strong>27/7 support</strong></h3>
+            <p>For any inquiry, we are available 24 hours every day</p>
           </div>
         </div>
         <div className="infobox">
@@ -40,8 +40,8 @@ const WebShopInfo = () => {
             <img className="img-top me-3" src={onlinePaymentIconWhite} alt="an online payment icon"/>
           </div>
           <div>
-              <h3><strong>Online payment</strong></h3>
-              <p>You can pay quickly and easily with our online payment system</p>
+            <h3><strong>Online payment</strong></h3>
+            <p>You can pay quickly and easily with our online payment system</p>
           </div>
         </div>
         <div className="infobox">
@@ -50,8 +50,8 @@ const WebShopInfo = () => {
             <img className="img-top me-3" src={freeDelineryIconWhite} alt="a free delivery icon"/>
           </div>
           <div>
-              <h3><strong>Free delivery</strong></h3>
-              <p>For a local customer, we provide free shipping facility</p>
+            <h3><strong>Free delivery</strong></h3>
+            <p>For a local customer, we provide free shipping facility</p>
           </div>
         </div>
       </div>
