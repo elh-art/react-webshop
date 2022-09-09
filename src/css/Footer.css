@@ -1,0 +1,9 @@
+footer {
+  background-color: var(--color-dark-theme);
+  color: var(--color-white);
+  height: 80px;
+}
+
+  .available-payments img {
+    margin-left: 10px;
+  }

@@ -199,3 +199,9 @@
     .flying-tab i:hover {
       color: var(--color-theme);
     }
+
+/* FOR HOT-SALES.JS */
+
+    .box-arrival .hot-product {
+      background-color: var(--color-outofstock);
+    }

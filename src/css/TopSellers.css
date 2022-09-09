@@ -1,0 +1,33 @@
+.grid-topsell1 { grid-area: Bexim; }
+.grid-topsell2 { grid-area: Lighton; }
+.grid-topsell3 { grid-area: Rosimo; }
+
+.topsellers-grid {
+  grid-template-areas:
+  'Bexim Lighton'
+  'Bexim Rosimo';
+}
+
+  .grid-topsell1 {
+    height: 100%;
+  }
+
+  .grid-topsell2, .grid-topsell3 {
+    height: 350px;
+  }
+
+  .topsellers-img {
+    max-height: 710px;
+  }
+
+  .box-arrival .corp-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 80px;
+    width: 180px;
+    background-color: var(--color-white);
+    object-fit: contain;
+    padding: 20px;
+    z-index: 0; 
+  }

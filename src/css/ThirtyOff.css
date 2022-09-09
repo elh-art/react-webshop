@@ -1,0 +1,17 @@
+.thirty-off {
+  background-color: var(--color-grayish);
+}
+
+  .thirty-off .container p {
+    color: var(--color-white);
+  }
+
+.thirty-off .thirty-off_content {
+  width: 260px;
+  height: 420px;
+  background-color: var(--color-theme);
+}
+
+.thirty-off-sidepanel {
+  width: 440px;
+}
