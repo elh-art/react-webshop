@@ -206,11 +206,11 @@ body {
 }
 
   .signin .external-login .external-login-facebook button {
-    /* background-image: url(../images/facebook-login-button.svg);   */
+    background-image: url(./images/facebook-login-button.svg);  
   }
 
   .signin .external-login .external-login-google button {
-    /* background-image: url(../images/google-login-button.svg);   */
+    background-image: url(./images/google-login-button.svg);  
   }
 
 .signup .card-titel-text {

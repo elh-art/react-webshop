@@ -1,3 +1,8 @@
+.mid-menu .container .company-logo a {
+  text-decoration: none;
+  color: black;
+}
+
 .mid-menu .container .company-logo h1 {
   font-family: var(--font-jost);
 }
@@ -48,27 +53,24 @@
 
 .mid-menu .container .shopping {
   height: 106px;
+  width: 350px;
 }
 
-  .mid-menu .container .shopping a {
-    margin-left: 25px;
-    padding: 0 4px 0 4px;
+  .mid-menu .container .shopping a,
+  .mid-menu .container .shopping .shopping-height {
     color: var(--color-dark-theme);
     font-size: 22px;
     text-decoration: none;
+    margin-right: 10px;
+    width: 100%;
   }
  
-  .mid-menu .container .shopping .my-account span {
-    width: 100px;
-  }
-
   .mid-menu .container .shopping a:hover {
     color: var(--color-outofstock);
   }
 
-  .mid-menu .container .shopping .shopping-height {
-    height: 22px;
-    width: 33px;
+  .mid-menu .container .shopping .my-account {
+    min-width: 120px;
   }
 
     .shoppingamount {

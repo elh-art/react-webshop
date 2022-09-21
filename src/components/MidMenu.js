@@ -1,17 +1,20 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import '../css/MidMenu.css'
 
 const MidMenu = () => {
   return (
   <>
-    <header className="mid-menu">
+    <section className="mid-menu">
       <div className="container d-flex justify-content-between align-items-center">
         <div className="company-logo">
-           <h1 className='fs-2 m-0'>
-            KEN
-            <img src={require('../images/Path_8.png')} alt="KenKata logo"/>
-            KATA
-           </h1>
+          <NavLink to="/">
+            <h1 className='fs-2 m-0'>
+              KEN
+                <img src={require('../images/Path_8.png')} alt="KenKata logo"/>
+              KATA
+            </h1>
+           </NavLink>
         </div>
         <div className="search-bar d-flex">
           <input className='ps-4' type="text" placeholder="Search products..." />
@@ -21,9 +24,10 @@ const MidMenu = () => {
               <i className="fa-light fa-angle-down ms-1"></i>
             </button>
             <ul className="dropdown-menu" aria-labelledby="searchbar-dropdown">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+              <li><NavLink to="products/men" className="dropdown-item">Men</NavLink></li>
+              <li><NavLink to="products/women" className="dropdown-item">Women</NavLink></li>
+              <li><NavLink to="products/kids" className="dropdown-item">Kids</NavLink></li>
+              <li><NavLink to="products/accessories" className="dropdown-item">Accessories</NavLink></li>
             </ul>
           </div>
           <button className="magnifier bg-theme p-0 border border-0">
@@ -32,41 +36,46 @@ const MidMenu = () => {
         </div>
 
         <div className="shopping d-flex align-items-center justify-content-between">
-          <a className="my-account d-flex align-items-center" href="./myaccount.html">
+
+          <NavLink to="account" className="my-account ms-2">            
             <i className="fa-light fa-user"></i>
             <span className='fs-6 ms-2'>My account</span>
-          </a>
-          <a href="#"><i className="fal fa-heart"></i></a>
-          <a className="shopping-height position-relative" href="#">
-            <i className="fa-light fa-random position-absolute">
+          </NavLink>
+          <NavLink to="wishlist">
+            <i className="fal fa-heart"></i>
+          </NavLink>
+          <NavLink to="compare" className="shopping-height">
+            <i className="fa-light fa-random position-relative">
              <small className="shoppingamount position-absolute">0</small> 
             </i>
-          </a>
-          <a className="shopping-height position-relative" href="#">
-            <i className="fal fa-shopping-bag position-absolute">
+          </NavLink>
+
+          <div className="shopping-height d-flex align-items-center justify-content-between">
+            <i className="fal fa-shopping-bag position-relative me-3">
              <small className="shoppingamount position-absolute">0</small>
             </i>
-          </a> 
-          <div className="priceofgoods fs-6 ms-1">$0.00</div>
+          <div className="priceofgoods fs-6 ">$0.00</div>
+          </div> 
         </div>
       </div>
-    </header>
+    </section>
 
     <div className="main-menu">
       <div className="container d-flex justify-content-between align-items-center">
         <div className="dropdown">
           <button className="btn btn-theme p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i className="fa-regular fa-bars"></i>
-            <span>Browse Categories</span> 
+            <span className='ms-2'>Browse Categories</span> 
             <i className="fa-regular fa-chevron-down ps-5"></i>
           </button>
           <ul className="dropdown-menu" aria-labelledby="main-menu-dropdown">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><NavLink to="products/men" className="dropdown-item">Men</NavLink></li>
+            <li><NavLink to="products/women" className="dropdown-item">Women</NavLink></li>
+            <li><NavLink to="products/kids" className="dropdown-item">Kids</NavLink></li>
+            <li><NavLink to="products/accessories" className="dropdown-item">Accessories</NavLink></li>
           </ul>
         </div>
-        <button className="btn btn-theme btn-special-offer" type="submit">SPECIAL OFFER</button>
+        <NavLink to="special-offer" className="btn btn-theme btn-special-offer" type="submit">SPECIAL OFFER</NavLink>
       </div>
     </div>
   </>
