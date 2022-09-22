@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/FlashSale.css'
+import { NavLink } from 'react-router-dom'
 
 const FlashSale = () => {
   return (
@@ -29,7 +30,9 @@ const FlashSale = () => {
                 <p>Seconds</p>
               </div>
             </div>
-            <button className="btn btn-white">SHOP NOW</button>
+            <NavLink to='products'>
+              <button className="btn btn-white">SHOP NOW</button>
+            </NavLink>         
           </div>
         </div>
       </section>  
