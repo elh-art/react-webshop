@@ -1,34 +1,10 @@
 import React, {useState} from 'react'
+import local_json from '../assets/products.json'
 import '../css/NewArrivals.css'
 
 const NewArrivals = () => {
 
-  const [products, setProducts] = useState([
-    { id: 1, 
-      name: "Blue silk flare sleeved top bottom", 
-      category: "Fashion", 
-      oldPrice: 50.00, 
-      newPrice: 20.00, 
-      rating: 4, 
-      image: require('../images/NewArrival1.png'),
-      new: true},
-    { id: 2, 
-      name: "Black silk flare sleeved top", 
-      category: "Fashion", 
-      oldPrice: 56.00, 
-      newPrice: 22.00, 
-      rating: 2, 
-      image: require('../images/NewArrival2.png'),
-      new: false},
-    { id: 3, 
-      name: "New look men's coat", 
-      category: "Fashion", 
-      oldPrice: 44.00, 
-      newPrice: 35.00, 
-      rating: 5, 
-      image: require('../images/NewArrival3.png'),
-      new: false},
-])
+  const [products, setProducts] = useState(local_json)
 
   return (
     <>
@@ -38,10 +14,11 @@ const NewArrivals = () => {
         </div>
         <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           { products.map(product => (
-              <div className="box-arrival">
+              product.id < 4 ?
+              <div key={product.id} className="box-arrival">
                   <div className="box-dark"></div>
                   {product.new ? <h3>NEW</h3> : ''}
-                  <img src={product.image} alt="New arrival sleved top" />
+                  <img src={`${product.image}`} alt={product.name} />
                   <div className="product-info">
                     <p className="product-name">{product.name}</p>
                     <p className="fashion">{product.category}</p>
@@ -55,7 +32,7 @@ const NewArrivals = () => {
                     <i className="fa-light fa-magnifying-glass"></i>
                     <i className="fa-regular fa-cart-shopping"></i>
                   </div>        
-              </div>
+              </div> : <div key={product.id}></div>
             ))
           }
         </div>

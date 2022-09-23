@@ -36,7 +36,7 @@ const HotSales = () => {
           <div className="box-arrival">
             <div className="box-dark"></div>
             <h3>-50%</h3>
-            <img src={require('../images/NewArrival1.png')} alt="New arrival mens coat" />
+            <img src={require('../images/featured3.png')} alt="New arrival mens coat" />
             <div className="product-info">
               <p className="product-name">New look men's coat</p>
               <p className="fashion">Fashion</p>
