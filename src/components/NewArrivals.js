@@ -14,7 +14,7 @@ const NewArrivals = () => {
         </div>
         <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           { products.map(product => (
-              product.id < 4 ?
+              product.newArrival ?
               <div key={product.id} className="box-arrival">
                   <div className="box-dark"></div>
                   {product.new ? <h3>NEW</h3> : ''}
@@ -32,7 +32,7 @@ const NewArrivals = () => {
                     <i className="fa-light fa-magnifying-glass"></i>
                     <i className="fa-regular fa-cart-shopping"></i>
                   </div>        
-              </div> : <div key={product.id}></div>
+              </div> : ''
             ))
           }
         </div>

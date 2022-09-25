@@ -1,6 +1,6 @@
-.grid-topsell1 { grid-area: Bexim; }
-.grid-topsell2 { grid-area: Lighton; }
-.grid-topsell3 { grid-area: Rosimo; }
+.grid-topsell2 { grid-area: Bexim; }
+.grid-topsell1 { grid-area: Lighton; }
+.grid-topsell0 { grid-area: Rosimo; }
 
 .topsellers-grid {
   grid-template-areas:
@@ -8,11 +8,11 @@
   'Bexim Rosimo';
 }
 
-  .grid-topsell1 {
+  .grid-topsell2 {
     height: 100%;
   }
 
-  .grid-topsell2, .grid-topsell3 {
+  .grid-topsell1, .grid-topsell0 {
     height: 350px;
   }
 
