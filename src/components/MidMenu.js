@@ -10,9 +10,9 @@ const MidMenu = () => {
         <div className="company-logo">
           <NavLink to="/">
             <h1 className='fs-2 m-0'>
-              KEN
+              ZEN
                 <img src={require('../images/Path_8.png')} alt="KenKata logo"/>
-              KATA
+              MODE
             </h1>
            </NavLink>
         </div>
