@@ -1,0 +1,53 @@
+.flash-sale {
+  background-color: $color-dark-theme;
+
+  .container {
+    height: 440px;
+  }
+  
+  .flash-sale_content {
+    width: 260px;
+    height: 270px;
+    background-color: $color-theme;
+
+    .flash-saleImg {
+      height: 110px;
+      width: 140px;
+    }
+
+    p {
+      color: $color-white;
+    }
+  }
+}
+
+.flash-sale-sidepanel {
+  top: 120px;
+  width: 530px;
+  height: 114px;
+
+  .time-balls {
+    .time-ball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 114px;
+    width: 114px;
+    border: 3px solid $color-theme;
+    border-radius: 50%;
+    background-color: $color-white;
+
+      h1 {
+        color: $color-theme;
+        font-weight: $font-weight-bold;
+        margin: 0;
+      }
+
+      p {
+        color: $color-dark-theme;
+        margin: 0;
+      }
+    }
+  }
+}

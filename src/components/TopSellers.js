@@ -14,8 +14,7 @@ const TopSellers = () => {
 
           {
             products.map(product => (
-              product.topSeller &&             
-              <Card product={product} products={products} />
+              product.topSeller && <Card product={product} products={products} />
             ))
           }
 

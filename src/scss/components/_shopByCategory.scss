@@ -1,0 +1,13 @@
+.shop-by-category {
+  width: 50%;
+  margin: 0 auto;
+
+  h1 {
+    font-family: $font-play;
+    font-weight: $font-weight-bold;
+
+    span {
+      color: $color-theme;
+    }
+  }
+}

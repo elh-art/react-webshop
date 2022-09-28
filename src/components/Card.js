@@ -1,8 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Card = ({product, products}) => {
+
+  const [count, setCount] = useState(1)
+  
+  const increaseCount = () => { 
+    setCount(prevCount => prevCount + 1)
+  }
+
   return (
     <>
+      {/* {product.topSeller && <div> <increaseCount /> </div>} */}
+      {/* <div key={product.id} className={"box-arrival grid-topsell" + `${count}`}> */}
       <div key={product.id} className={"box-arrival grid-topsell" + `${products.length - product.id}`}>
         <div className="box-dark"></div>
         {product.new && <h3 className="new-product">NEW</h3>}

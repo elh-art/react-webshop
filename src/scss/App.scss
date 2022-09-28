@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;500;700&family=Roboto:wght@400;500;700&family=Jost&display&display=swap');
+@import './colors';
+@import './variables';
+
+body {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-theme);   
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  padding: 0.75rem 1.75rem;
+}
+
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-theme);
+  border: none;
+}
+
+.btn-theme {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-white:hover,
+.btn-white:focus {
+    background-color: var(--color-dark-theme);
+    color: var(--color-white); 
+    border: none;  
+}
+
+.btn-special-offer {
+  padding: 0.45rem 1.3rem;
+}

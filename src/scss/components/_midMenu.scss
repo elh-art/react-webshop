@@ -1,0 +1,106 @@
+.mid-menu .container {
+  .company-logo {
+    a {
+    text-decoration: none;
+    color: black;
+    }
+
+    h1 {
+      font-family: $font-jost;
+
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  
+  .search-bar {
+    max-width: 540px;
+    height: 47px;
+
+    input {
+      border-radius: 23.5px 0 0 23.5px;
+      border: 2px solid $color-gray;
+      border-right: none;
+      width: 350px;
+      outline: none;
+    }
+
+    .dropdown button {
+      width: 150px;
+      height: 47px;
+      background-color: $color-white;
+      border-radius: 0;
+      color: $color-dark-theme;
+      border: 2px solid $color-gray;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      i {
+        color: $color-instock;
+        font-weight: 700;
+      }
+    }
+
+    .magnifier {
+      border-radius: 0 50% 50% 0;
+      width: 47px;
+      
+      .fa-magnifying-glass {
+        &:active {
+          color: $color-outofstock;
+        }
+      }
+    }
+  }
+
+  .shopping {
+    height: 106px;
+    width: 350px;
+
+    a,
+    .shopping-height {
+      color: $color-dark-theme;
+      font-size: 22px;
+      text-decoration: none;
+      margin-right: 10px;
+      width: 100%;
+
+      .shoppingamount {
+        top: -8px;
+        right: -11px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: $color-theme;
+        color: $color-white;
+        font-size: 8px;
+        text-align: center;
+        line-height: 18px;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $color-outofstock;
+      }
+    }
+
+    .my-account {
+      min-width: 120px;
+    }
+  }
+}
+
+.main-menu {
+  border-top: 1px solid $color-gray;  
+  
+  .dropdown {
+    
+    button {
+    border-radius: 0;
+    }
+  }
+}
