@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/FlashSale.css'
 import { NavLink } from 'react-router-dom'
 
 const FlashSale = () => {

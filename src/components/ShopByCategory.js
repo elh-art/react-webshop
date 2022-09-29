@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/ShopByCategory.css'
 import waveLine from '../images/wave-line.svg'
 
 const ShopByCategory = ({header1, header2, fillertext}) => {

@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;500;700&family=Roboto:wght@400;500;700&family=Jost&display&display=swap');
 @import './colors';
 @import './variables';
+@import './components/account';
+@import './components/flashSale';
+@import './components/footer';
+@import './components/midMenu';
+@import './components/miniCarousel';
+@import './components/newArrivals';
+@import './components/shopByCategory';
+@import './components/shoppingGrid';
+@import './components/showCase';
+@import './components/subscribeSection';
+@import './components/thirtyOff';
+@import './components/topMenu';
+@import './components/topSellers';
+@import './components/webShopInfo';
 
 body {
-  font-family: var(--font-roboto);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-dark-theme);   
+  font-family: $font-roboto;
+  font-weight: $font-weight-regular;
+  color: $color-dark-theme;   
   line-height: 1.5;
   font-size: 16px;
 }
@@ -13,19 +27,19 @@ body {
 .btn {
   border-radius: 25px;
   font-size: 1rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: $font-weight-medium;
   padding: 0.75rem 1.75rem;
 }
 
 .btn-white {
-  background-color: var(--color-white);
-  color: var(--color-theme);
+  background-color: $color-white;
+  color: $color-theme;
   border: none;
 }
 
 .btn-theme {
-  background-color: var(--color-theme);
-  color: var(--color-white);
+  background-color: $color-theme;
+  color: $color-white;
   border: none;
 }
 
@@ -33,8 +47,8 @@ body {
 .btn-theme:focus,
 .btn-white:hover,
 .btn-white:focus {
-    background-color: var(--color-dark-theme);
-    color: var(--color-white); 
+    background-color: $color-dark-theme;
+    color: $color-white; 
     border: none;  
 }
 

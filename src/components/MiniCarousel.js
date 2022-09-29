@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/MiniCarousel.css'
 
 const MiniCarousel = () => {
   return (

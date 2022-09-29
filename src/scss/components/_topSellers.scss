@@ -6,12 +6,11 @@
   grid-template-areas:
   'Bexim Lighton'
   'Bexim Rosimo';
-}
 
   .grid-topsell2 {
     height: 100%;
   }
-
+  
   .grid-topsell1, .grid-topsell0 {
     height: 350px;
   }
@@ -20,14 +19,15 @@
     max-height: 710px;
   }
 
-  .box-arrival .corp-logo {
+  .corp-logo {
     position: absolute;
     top: 25px;
     left: 25px;
     height: 80px;
     width: 180px;
-    background-color: var(--color-white);
+    background-color: $color-white;
     object-fit: contain;
     padding: 20px;
     z-index: 0; 
   }
+}

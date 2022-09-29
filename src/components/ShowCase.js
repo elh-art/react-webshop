@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/ShowCase.css'
 import { NavLink } from 'react-router-dom'
 
 const ShowCase = () => {

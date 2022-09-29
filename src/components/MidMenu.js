@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../css/MidMenu.css'
 
 const MidMenu = () => {
   return (

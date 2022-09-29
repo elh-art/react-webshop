@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/WebShopInfo.css'
 import freeShippingIcon from '../images/free-shipping-icon.svg'
 import freeShippingIconWhite from '../images/free-shipping-icon_white.svg'
 import clockIcon from '../images/clock-icon.svg'

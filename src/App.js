@@ -1,6 +1,6 @@
  
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import './App.css'
+import './App.min.css'
 import TopMenu from './components/TopMenu';
 import MidMenu from './components/MidMenu';
 import Home from './view/Home'

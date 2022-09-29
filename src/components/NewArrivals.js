@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import local_json from '../assets/products.json'
-import '../css/NewArrivals.css'
 import Card from './Card'
 
 const NewArrivals = () => {

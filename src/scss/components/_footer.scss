@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--color-dark-theme);
-  color: var(--color-white);
+  background-color: $color-dark-theme;
+  color: $color-white;
   height: 80px;
 
   .available-payments {

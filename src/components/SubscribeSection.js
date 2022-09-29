@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/SubscribeSection.css'
 
 const SubscribeSection = () => {
   return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/ThirtyOff.css'
 import { NavLink } from 'react-router-dom'
 
 const ThirtyOff = () => {

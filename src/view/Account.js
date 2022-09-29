@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/Account.css'
 import { NavLink } from 'react-router-dom'
 import SignIn from '../components/SignIn'
 import SignUp from '../components/SignUp'

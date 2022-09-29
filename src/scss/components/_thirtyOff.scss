@@ -1,0 +1,20 @@
+.thirty-off {
+  background-color: $color-grayish;
+
+  .container {
+    
+    .thirty-off_content {
+      width: 260px;
+      height: 420px;
+      background-color: $color-theme;
+      
+      p {
+        color: $color-white;
+      }
+    }
+
+    .thirty-off-sidepanel {
+      width: 440px;
+    }
+  }
+}

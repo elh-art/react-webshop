@@ -1,0 +1,52 @@
+.top-menu .container {
+  height: 40px;
+
+  .site-settings {
+    border-right: 2px solid $color-white;
+    height: 100%;
+
+    select {
+      margin-right: 0.75rem;
+      border: none;
+      background: $color-theme;
+      color: $color-white;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-dark-theme;
+      }
+    } 
+  }
+
+  .links {
+    a {
+      text-decoration: none;
+      color: $color-white;
+      padding: 14px 10px;
+
+      &:hover {
+        color: $color-dark-theme;
+      }
+    }
+
+    .links-top a {
+      border-right: 2px solid $color-white;
+    }
+
+    .socialmedia > a {
+        padding: 5px 12px;
+    }
+  }
+}
+
+/* @media (min-width: 578px) {
+  .top-menu .links {
+
+  }
+}
+
+@media (min-width: 992px) {
+  .top-menu .links .links-top {
+
+  }
+} */

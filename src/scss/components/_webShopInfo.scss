@@ -1,0 +1,46 @@
+.webshop-info .container-fluid .infobox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 2rem;
+  width: 400px;
+  height: 140px;
+  border-radius: 8px;
+  margin: 7.5rem 1rem;
+  background-color: $color-theme-light;
+
+  &:hover {
+    background-color: $color-theme;
+    color: $color-white;
+
+    .infobox-container .img-top {
+      display: inline;
+    }
+  }
+
+  h3 {  
+    font-size: 1rem;     
+    font-weight: $font-weight-medium;
+  }
+  
+  p {
+    font-weight: $font-weight-regular;
+  }
+  
+  .infobox-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+
+    .img-top {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+  }
+}
