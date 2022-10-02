@@ -1,28 +1,58 @@
 .mid-menu .container {
-  .company-logo {
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .account-wishlist {
+    
     a {
-    text-decoration: none;
-    color: black;
-    }
+      width: 115px;
+      color: $color-dark-theme;
+      font-size: 22px;
+      text-decoration: none;
+      text-align: center;
 
-    h1 {
-      font-family: $font-jost;
+      &:hover {
+        color: $color-outofstock;
 
-      img {
-        margin-bottom: 5px;
       }
+
+      &:last-child {
+        text-align: end;
+        width: 55px;
+      }
+    }
+  }
+
+  .site-settings {
+    height: 100%;
+    flex-direction: column;
+
+    select {
+      margin-right: 0.75rem;
+      border: none;
+      background: $color-white;
+      color: $color-theme;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-dark-theme;
+      }
+    } 
+
+    @include lg {
+      flex-direction: row;
     }
   }
   
   .search-bar {
-    max-width: 540px;
-    height: 47px;
 
     input {
       border-radius: 23.5px 0 0 23.5px;
       border: 2px solid $color-gray;
       border-right: none;
-      width: 350px;
+      width: 250px;
       outline: none;
     }
 
@@ -54,19 +84,32 @@
         }
       }
     }
+
+    @include sm {
+      flex-direction: column;
+
+      input {
+        border-radius: 23.5px;
+        border-right: 2px solid $color-gray;
+      }
+
+      .dropdown, button {
+        display: none;
+      }
+    }
   }
 
   .shopping {
-    height: 106px;
-    width: 350px;
+    min-width: 250px;
 
-    a,
-    .shopping-height {
-      color: $color-dark-theme;
-      font-size: 22px;
-      text-decoration: none;
-      margin-right: 10px;
-      width: 100%;
+    a {
+    color: $color-dark-theme;
+    font-size: 22px;
+    text-decoration: none;
+
+      .shopping-height {
+        width: 100%;  
+      }
 
       .shoppingamount {
         top: -8px;
@@ -80,17 +123,12 @@
         text-align: center;
         line-height: 18px;
       }
-    }
 
-    a {
       &:hover {
         color: $color-outofstock;
       }
     }
 
-    .my-account {
-      min-width: 120px;
-    }
   }
 }
 

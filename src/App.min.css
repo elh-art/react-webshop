@@ -187,25 +187,47 @@ footer .available-payments img {
   margin-left: 10px;
 }
 
-.mid-menu .container .company-logo a {
+.mid-menu .container .navbar-nav {
+  width: 100%;
+}
+.mid-menu .container .account-wishlist a {
+  width: 115px;
+  color: #0e153d;
+  font-size: 22px;
   text-decoration: none;
-  color: black;
+  text-align: center;
 }
-.mid-menu .container .company-logo h1 {
-  font-family: "Jost", sans-serif;
+.mid-menu .container .account-wishlist a:hover {
+  color: #fe4545;
 }
-.mid-menu .container .company-logo h1 img {
-  margin-bottom: 5px;
+.mid-menu .container .account-wishlist a:last-child {
+  text-align: end;
+  width: 55px;
 }
-.mid-menu .container .search-bar {
-  max-width: 540px;
-  height: 47px;
+.mid-menu .container .site-settings {
+  height: 100%;
+  flex-direction: column;
+}
+.mid-menu .container .site-settings select {
+  margin-right: 0.75rem;
+  border: none;
+  background: #fff;
+  color: #20d3c2;
+  cursor: pointer;
+}
+.mid-menu .container .site-settings select:hover {
+  color: #0e153d;
+}
+@media (max-width: 992px) {
+  .mid-menu .container .site-settings {
+    flex-direction: row;
+  }
 }
 .mid-menu .container .search-bar input {
   border-radius: 23.5px 0 0 23.5px;
   border: 2px solid #e3e3e3;
   border-right: none;
-  width: 350px;
+  width: 250px;
   outline: none;
 }
 .mid-menu .container .search-bar .dropdown button {
@@ -230,20 +252,30 @@ footer .available-payments img {
 .mid-menu .container .search-bar .magnifier .fa-magnifying-glass:active {
   color: #fe4545;
 }
-.mid-menu .container .shopping {
-  height: 106px;
-  width: 350px;
+@media (max-width: 576px) {
+  .mid-menu .container .search-bar {
+    flex-direction: column;
+  }
+  .mid-menu .container .search-bar input {
+    border-radius: 23.5px;
+    border-right: 2px solid #e3e3e3;
+  }
+  .mid-menu .container .search-bar .dropdown, .mid-menu .container .search-bar button {
+    display: none;
+  }
 }
-.mid-menu .container .shopping a,
-.mid-menu .container .shopping .shopping-height {
+.mid-menu .container .shopping {
+  min-width: 250px;
+}
+.mid-menu .container .shopping a {
   color: #0e153d;
   font-size: 22px;
   text-decoration: none;
-  margin-right: 10px;
+}
+.mid-menu .container .shopping a .shopping-height {
   width: 100%;
 }
-.mid-menu .container .shopping a .shoppingamount,
-.mid-menu .container .shopping .shopping-height .shoppingamount {
+.mid-menu .container .shopping a .shoppingamount {
   top: -8px;
   right: -11px;
   height: 18px;
@@ -257,9 +289,6 @@ footer .available-payments img {
 }
 .mid-menu .container .shopping a:hover {
   color: #fe4545;
-}
-.mid-menu .container .shopping .my-account {
-  min-width: 120px;
 }
 
 .main-menu {
@@ -578,12 +607,12 @@ footer .available-payments img {
   background-color: #fff;
   color: #aaa;
 }
-.subscribe-box .container .showcase_content .embeded-subscribe .subscribe-box input {
+.subscribe-box .container .showcase_content .embeded-subscribe input {
   border: none;
   outline: none;
   cursor: pointer;
 }
-.subscribe-box .container .showcase_content .embeded-subscribe .subscribe-box button {
+.subscribe-box .container .showcase_content .embeded-subscribe button {
   height: 42px;
   margin: 2px;
 }
@@ -608,22 +637,28 @@ footer .available-payments img {
   width: 440px;
 }
 
-.top-menu .container {
-  height: 40px;
-}
-.top-menu .container .site-settings {
-  border-right: 2px solid #fff;
-  height: 100%;
-}
-.top-menu .container .site-settings select {
-  margin-right: 0.75rem;
-  border: none;
-  background: #20d3c2;
+.top-menu .container .company-logo a {
+  text-decoration: none;
   color: #fff;
-  cursor: pointer;
 }
-.top-menu .container .site-settings select:hover {
-  color: #0e153d;
+.top-menu .container .company-logo h1 {
+  font-family: "Jost", sans-serif;
+}
+.top-menu .container .company-logo h1 img {
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.top-menu .container .navbar-collapse {
+  flex-grow: unset;
+}
+.top-menu .container .navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+.top-menu .container .navbar-toggler:focus {
+  box-shadow: none;
+}
+.top-menu .container .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .top-menu .container .links a {
   text-decoration: none;
@@ -633,24 +668,19 @@ footer .available-payments img {
 .top-menu .container .links a:hover {
   color: #0e153d;
 }
-.top-menu .container .links .links-top a {
-  border-right: 2px solid #fff;
-}
 .top-menu .container .links .socialmedia > a {
   padding: 5px 12px;
 }
-
-/* @media (min-width: 578px) {
-  .top-menu .links {
-
-  }
+.top-menu .container .links .socialmedia > a i {
+  color: #fff;
+}
+.top-menu .container .links .socialmedia > a i:hover {
+  color: #0e153d;
+}
+.top-menu .container .links .socialmedia > a:last-child {
+  padding-right: 0;
 }
 
-@media (min-width: 992px) {
-  .top-menu .links .links-top {
-
-  }
-} */
 .grid-topsell2 {
   grid-area: Bexim;
 }

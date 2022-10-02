@@ -4,19 +4,19 @@ import { NavLink } from 'react-router-dom'
 const SignIn = () => {
   return (
     <>
-      <form className="signin d-flex flex-column" onsubmit="handleSignIn(event)" novalidate>
+      <form className="signin d-flex flex-column" onSubmit="handleSignIn(event)" noValidate>
         <h2 className="card-title mb-4">
           Login
         </h2>
         <div className="input-control email-input mb-4">
-          <label for="email">Email address <span className="required">*</span></label>
-          <input type="email" name="email" id="email" autocomplete="off" onkeyup="validate(event)" required/>
+          <label htmlFor="email">Email address <span className="required">*</span></label>
+          <input type="email" name="email" id="email" autoComplete="off" onKeyUp="validate(event)" required/>
           <i className="fas fa-check-circle"></i>
           <small className="text-danger" id="email-error"></small>
         </div>
         <div className="input-control password-input mb-4">
-          <label for="password">Password <span className="required">*</span></label>
-          <input type="password" name="password" id="password" autocomplete="off" onkeyup="validate(event)" required/>
+          <label htmlFor="password">Password <span className="required">*</span></label>
+          <input type="password" name="password" id="password" autoComplete="off" onKeyUp="validate(event)" required/>
           <i className="fas fa-check-circle"></i>
           <small className="text-danger" id="password-error"></small>
         </div>
@@ -28,7 +28,7 @@ const SignIn = () => {
         <div className="remember mb-4 d-flex justify-content-between align-items-center">
           <div className="remember-me">
             <input id="remember-check" type="Checkbox"/>
-            <label for="remember-check">Remember me</label>
+            <label htmlFor="remember-check">Remember me</label>
           </div>
           <NavLink to="lost-password">Lost your password</NavLink>
         </div>
