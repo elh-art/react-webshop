@@ -30,7 +30,7 @@
   padding: 30px;
 }
 
-.signup-signin .input-control {
+.signup-signin .form-input {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -39,10 +39,12 @@
       position: absolute;
       top: 40px;
       right: 10px;
-      visibility: hidden;
+      display: none;
+      color: $color-theme;
     }
 
   small {
+      display: none;
       position: absolute;
       bottom: -1.5em;
       left: 0;
@@ -55,16 +57,19 @@
       transform: translateY(-2px);
       transition: 250ms ease-in-out;
     }
+
+    &:invalid[focused="true"] {
+      border: 1px solid $color-outofstock;
+    }
+
+    &:invalid[focused="true"] ~ small {
+      display: block;
+    }
+
+    &:valid[focused="true"] ~ i {
+      display: block;
+    }
   }
-}
-
-.signup-signin .input-control.validated input {   
-  box-shadow: 2px 2px $color-instock; 
-}
-
-.signup-signin .input-control.validated i.fa-check-circle {   
-  visibility: visible;
-  color: $color-instock;
 }
 
   .signup-signin {

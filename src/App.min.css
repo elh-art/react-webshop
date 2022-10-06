@@ -37,36 +37,38 @@
   padding: 30px;
 }
 
-.signup-signin .input-control {
+.signup-signin .form-input {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.signup-signin .input-control i {
+.signup-signin .form-input i {
   position: absolute;
   top: 40px;
   right: 10px;
-  visibility: hidden;
+  display: none;
+  color: #20d3c2;
 }
-.signup-signin .input-control small {
+.signup-signin .form-input small {
+  display: none;
   position: absolute;
   bottom: -1.5em;
   left: 0;
   font-size: 0.75em;
 }
-.signup-signin .input-control input:focus {
+.signup-signin .form-input input:focus {
   outline: none;
   transform: translateY(-2px);
   transition: 250ms ease-in-out;
 }
-
-.signup-signin .input-control.validated input {
-  box-shadow: 2px 2px #64cb83;
+.signup-signin .form-input input:invalid[focused=true] {
+  border: 1px solid #fe4545;
 }
-
-.signup-signin .input-control.validated i.fa-check-circle {
-  visibility: visible;
-  color: #64cb83;
+.signup-signin .form-input input:invalid[focused=true] ~ small {
+  display: block;
+}
+.signup-signin .form-input input:valid[focused=true] ~ i {
+  display: block;
 }
 
 .signup-signin input {

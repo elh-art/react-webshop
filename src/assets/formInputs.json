@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "name":"firstname",
+    "type":"text",
+    "errorMessage": "Failed firstname validation.",
+    "required": true,
+    "pattern": "^([a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ'`'\\-]{2,})+$",
+    "label":"Firstname"
+  },
+  {
+    "id":2,
+    "name":"lastname",
+    "type":"text",
+    "errorMessage": "Failed lastname validation.",
+    "required": true,
+    "pattern": "^([a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ'`'\\-]{2,})+$",
+    "label":"Lastname"
+  },
+  {
+    "id":3,
+    "name":"email",
+    "type":"email",
+    "errorMessage": "Failed email validation.",
+    "required": true,
+    "pattern": "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$",
+    "label":"Email address"
+  },
+  {
+    "id":4,
+    "name":"password",
+    "type":"password",
+    "errorMessage": "Minimum one lower, one upper case letter and a number. Min length: 8 characters.",
+    "required": true,
+    "pattern": "^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$",
+    "label":"Password"
+  },
+  {
+    "id":5,
+    "name":"password_repeat",
+    "type":"password",
+    "errorMessage": "Passwords don't match.",
+    "required": true,
+    "pattern": "",
+    "label":"Password check"
+  }
+]

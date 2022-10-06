@@ -1,25 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import FormInput from './FormInput'
+import formInputs from '../assets/formInputs.json'
 
 const SignIn = () => {
+
+  const [values, setValues] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    password_repeat: "",
+  })
+
+  const inputs = formInputs
+
+  const handleSignIn = (e) => {
+    e.preventDefault()
+  }
+
+  const onChange = (e) => {
+    setValues({...values, [e.target.name]: e.target.value})
+  }
+
   return (
     <>
-      <form className="signin d-flex flex-column" onSubmit="handleSignIn(event)" noValidate>
+      <form className="signin d-flex flex-column" onSubmit={handleSignIn} noValidate>
         <h2 className="card-title mb-4">
           Login
         </h2>
-        <div className="input-control email-input mb-4">
-          <label htmlFor="email">Email address <span className="required">*</span></label>
-          <input type="email" name="email" id="email" autoComplete="off" onKeyUp="validate(event)" required/>
-          <i className="fas fa-check-circle"></i>
-          <small className="text-danger" id="email-error"></small>
-        </div>
-        <div className="input-control password-input mb-4">
-          <label htmlFor="password">Password <span className="required">*</span></label>
-          <input type="password" name="password" id="password" autoComplete="off" onKeyUp="validate(event)" required/>
-          <i className="fas fa-check-circle"></i>
-          <small className="text-danger" id="password-error"></small>
-        </div>
+  
+        <FormInput key={inputs[2].id} {...inputs[2]} value={values[inputs[2].name]} onChange={onChange} />
+        <FormInput key={inputs[3].id} {...inputs[3]} value={values[inputs[3].name]} onChange={onChange} />
+
         <button type="submit" className="btn btn-lg btn-theme mb-4">
         <span id="spinner" className="d-none spinner-border spinner-border-sm me-3" role="status" aria-hidden="true"></span>
           LOG IN
