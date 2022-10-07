@@ -5,12 +5,9 @@ import formInputs from '../assets/formInputs.json'
 
 const SignIn = () => {
 
-  const [values, setValues] = useState({
-    firstname: "",
-    lastname: "",
+  const [inValues, setInValues] = useState({
     email: "",
     password: "",
-    password_repeat: "",
   })
 
   const inputs = formInputs
@@ -20,20 +17,22 @@ const SignIn = () => {
   }
 
   const onChange = (e) => {
-    setValues({...values, [e.target.name]: e.target.value})
+    setInValues({...inValues, [e.target.name]: e.target.value})
   }
 
   return (
-    <>
-      <form className="signin d-flex flex-column" onSubmit={handleSignIn} noValidate>
+    <div class="col-sm-6">
+      <div class="card border-0">
+
+      <form className="signin card-body w-100" onSubmit={handleSignIn} noValidate>
         <h2 className="card-title mb-4">
           Login
         </h2>
   
-        <FormInput key={inputs[2].id} {...inputs[2]} value={values[inputs[2].name]} onChange={onChange} />
-        <FormInput key={inputs[3].id} {...inputs[3]} value={values[inputs[3].name]} onChange={onChange} />
+        <FormInput key={inputs[2].id} {...inputs[2]} value={inValues[inputs[2].name]} onChange={onChange} />
+        <FormInput key={inputs[3].id} {...inputs[3]} value={inValues[inputs[3].name]} onChange={onChange} />
 
-        <button type="submit" className="btn btn-lg btn-theme mb-4">
+        <button type="submit" className="btn btn-lg btn-theme mb-4 w-100">
         <span id="spinner" className="d-none spinner-border spinner-border-sm me-3" role="status" aria-hidden="true"></span>
           LOG IN
         </button>
@@ -49,16 +48,21 @@ const SignIn = () => {
           <div className="external-login-line"></div>
           <span>Or login with</span>
         </div>
-        <div className="external-login mb-4 mt-5 d-flex align-items-center justify-content-between">
-          <div className="external-login-facebook">
-            <button></button>
-          </div>
-          <div className="external-login-google">
-            <button></button>
-          </div>
+        <div className="external-login mb-4 mt-5 d-flex align-items-center justify-content-between gap-2">
+          <a href='https://www.facebook.com' target='_blank'>
+            <div className="external-login-facebook">
+             <i class="fa-brands fa-square-facebook p-2"> Facebook</i>
+            </div>
+          </a>
+          <a href='https://www.google.com' target='_blank'>
+            <div className="external-login-google">
+              <i class="fa-brands fa-google p-2"> Google</i>
+            </div>
+          </a>
         </div>
       </form>
-    </>
+    </div>
+  </div>
   )
 }
 

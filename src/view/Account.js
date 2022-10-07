@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import SignIn from '../components/SignIn'
 import SignUp from '../components/SignUp'
+import Footer from '../components/Footer'
 
 const Account = () => {
   return (
@@ -12,10 +13,13 @@ const Account = () => {
           <h5><NavLink to="/">Home</NavLink><span>/ My Account</span></h5>
         </div>
       </div>
-      <section className="signup-signin form container d-flex justify-content-between gap-4 mt-5 mb-5">
-        <SignIn />
-        <SignUp />
+      <section className="container mt-4 mb-5">
+        <div className="signup-signin form row">
+          <SignIn />
+          <SignUp />
+        </div>
       </section>
+      <Footer />
     </>
   )
 }

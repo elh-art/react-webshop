@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer className="d-flex justify-content-between">
         <div className="container d-flex justify-content-between align-items-center p-0">
-          <p className="m-0">© Copyright 2020 KenKata</p>
+          <p className="m-0">© Copyright 2023 ZenMode</p>
           <div className="available-payments d-flex">
             <img src={require('../images/mastercard.png')} alt="mastercard"/>
             <img src={require('../images/paypal.png')} alt="paypal"/>

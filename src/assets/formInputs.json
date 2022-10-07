@@ -30,7 +30,7 @@
     "id":4,
     "name":"password",
     "type":"password",
-    "errorMessage": "Minimum one lower, one upper case letter and a number. Min length: 8 characters.",
+    "errorMessage": "Min one lower & upper case letter and a number. Min length: 8.",
     "required": true,
     "pattern": "^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$",
     "label":"Password"
