@@ -315,6 +315,24 @@ footer .available-payments img {
 .main-menu .dropdown button {
   border-radius: 0;
 }
+.main-menu .dropdown button .fa-chevron-down {
+  padding-left: 3rem;
+}
+@media (max-width: 768px) {
+  .main-menu .dropdown button .fa-chevron-down {
+    padding-left: 0.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-menu .dropdown button {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-menu .btn-special-offer {
+    font-size: 0.75rem;
+  }
+}
 
 .mini-box {
   width: 13px;
@@ -598,8 +616,28 @@ footer .available-payments img {
 .showcase {
   background-color: #eee;
 }
+@media (max-width: 1200px) {
+  .showcase .container .showcaseBigImg {
+    width: 444px;
+  }
+}
+@media (max-width: 992px) {
+  .showcase .container .showcaseBigImg {
+    width: 333px;
+  }
+}
+@media (max-width: 768px) {
+  .showcase .container .showcaseBigImg {
+    display: none;
+  }
+}
 .showcase .container .showcase_content p {
   width: 380px;
+}
+@media (max-width: 768px) {
+  .showcase .container .showcase_content p {
+    width: auto;
+  }
 }
 
 .subscribe-box {
@@ -745,7 +783,7 @@ footer .available-payments img {
   width: 400px;
   height: 140px;
   border-radius: 8px;
-  margin: 7.5rem 1rem;
+  margin: 0.5rem 1rem;
   background-color: #edfcfa;
 }
 .webshop-info .container-fluid .infobox:hover {

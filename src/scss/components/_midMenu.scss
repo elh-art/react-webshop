@@ -139,6 +139,25 @@
 
     button {
     border-radius: 0;
+
+    .fa-chevron-down {
+      padding-left: 3rem;
+
+      @include md {
+        padding-left: 0.5rem;
+      }
+    }
+
+    @include sm {
+      font-size: 0.75rem;
+    }
+    }
+
+  }
+  
+  .btn-special-offer {
+    @include sm {
+      font-size: 0.75rem;
     }
   }
 }

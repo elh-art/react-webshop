@@ -1,7 +1,27 @@
 .showcase {
   background-color: $color-light-gray;
 
+  .container .showcaseBigImg {
+
+    @include xl {
+      width: 444px;
+    }
+
+    @include lg {
+      width: 333px;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
   .container .showcase_content p {
     width: 380px;
+
+    @include md {
+      width: auto;
+    }
   }
+
 }

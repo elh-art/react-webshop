@@ -75,7 +75,7 @@ const MidMenu = () => {
           <button className="btn btn-theme p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i className="fa-regular fa-bars"></i>
             <span className='ms-2'>Browse Categories</span> 
-            <i className="fa-regular fa-chevron-down ps-5"></i>
+            <i className="fa-regular fa-chevron-down"></i>
           </button>
           <ul className="dropdown-menu" aria-labelledby="main-menu-dropdown">
             <li><NavLink to="products/men" className="dropdown-item">Men</NavLink></li>
