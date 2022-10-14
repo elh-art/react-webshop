@@ -16,7 +16,7 @@ const HotSales = () => {
           {
             products.map(product => (
               product.featured &&
-              <Card product={product} products={products} />
+              <Card key={product.id} product={product} products={products} />
             ))
           }
         </div>

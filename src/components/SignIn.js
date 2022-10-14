@@ -14,6 +14,7 @@ const SignIn = () => {
 
   const handleSignIn = (e) => {
     e.preventDefault()
+
   }
 
   const onChange = (e) => {
@@ -21,8 +22,8 @@ const SignIn = () => {
   }
 
   return (
-    <div class="col-sm-6">
-      <div class="card border-0">
+    <div className="col-sm-6">
+      <div className="card border-0">
 
       <form className="signin card-body w-100" onSubmit={handleSignIn} noValidate>
         <h2 className="card-title mb-4">
@@ -51,12 +52,12 @@ const SignIn = () => {
         <div className="external-login mb-4 mt-5 d-flex align-items-center justify-content-between gap-2">
           <a href='https://www.facebook.com' target='_blank'>
             <div className="external-login-facebook">
-             <i class="fa-brands fa-square-facebook p-2"> Facebook</i>
+             <i className="fa-brands fa-square-facebook p-2"> Facebook</i>
             </div>
           </a>
           <a href='https://www.google.com' target='_blank'>
             <div className="external-login-google">
-              <i class="fa-brands fa-google p-2"> Google</i>
+              <i className="fa-brands fa-google p-2"> Google</i>
             </div>
           </a>
         </div>

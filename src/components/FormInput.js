@@ -28,7 +28,7 @@ const FormInput = (props) => {
         {...inputProps}
         className="mb-2"
       />
-      <i className="fas fa-check-circle"></i>
+      <i className="fas fa-check-circle validated"></i>
       {props.name === "password" && <i className="fas fa-eye" onClick={showPassword}></i>}
       {props.name === "password_repeat" && <i className="fas fa-eye" onClick={showPassword}></i>}
       <small className="text-danger" id={`${name}` + "-error"}>{errorMessage}</small>

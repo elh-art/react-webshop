@@ -15,7 +15,7 @@ const NewArrivals = () => {
         <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           { products.map(product => (
               product.newArrival &&
-              <Card product={product} products={products} />
+              <Card key={product.id} product={product} products={products} />
             ))
           }
         </div>

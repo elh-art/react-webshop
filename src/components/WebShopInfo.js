@@ -41,7 +41,7 @@ const WebShopInfo = () => {
 
         {
           items.map((item) => (
-            <Infobox item={item} />
+            <Infobox key={item.id} item={item} />
           ))
         }
 
