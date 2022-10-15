@@ -16,13 +16,21 @@ const SignUp = () => {
   const inputs = formInputs
   inputs[4].pattern = upValues.password
 
+  // HELPER FUNCTIONS
   const isHidden = (e) => {
     const style = window.getComputedStyle(e);
     return (style.display === 'none')
   }
 
+  const clearErrorMsg = (text) => {
+    setTimeout(() => {
+      document.getElementById(`response-${text}`).innerText = ''
+    }, "3000")
+  }
+
   const handleSignUp = (e) => {
     e.preventDefault()
+    e.target[5].children[0].classList.remove('d-none')
     
     const validatedElements = document.querySelector('.signup').getElementsByClassName("validated")
     const validatedArray = []
@@ -35,40 +43,55 @@ const SignUp = () => {
   // SEND INPUT DATA TO SERVER
     if (validatedArray.length === 5) {
 
-        let json = JSON.stringify({
-          firstname: e.target[0].value,
-          lastname: e.target[1].value,
-          email: e.target[2].value,
-          password: e.target[3].value
-        })
-      
-        fetch('https://lexicon-shared-webapi.azurewebsites.net/api/Auth/SignUp', {
-          method: 'post',
-          headers: {'Content-type':'application/json'},
-          body: json
-        })
-        .then(response => {
-          if (response.status === 409) {
+      let json = JSON.stringify({
+        firstname: e.target[0].value,
+        lastname: e.target[1].value,
+        email: e.target[2].value,
+        password: e.target[3].value
+      })
+    
+      const request = axios.post('https://lexicon-shared-webapi.azurewebsites.net/api/Auth/SignUp', json, {headers: {
+        "Content-Type": "application/json"}
+      })
+      .then(res => {
+        if (res.status === 200) {
+          document.getElementById('response-success').innerText = 'SUCCESS! Now you can Login.'
+          e.target[5].children[0].classList.add('d-none')
+          clearErrorMsg('success')
+        }
+      })
+      .catch((error)=> {
+        switch(error.response.status) {
+          case 409:
             document.getElementById('response-error2').innerText = 'There is already a user with the same email address'
             e.target[5].children[0].classList.add('d-none')
-            // clearErrorMsg('error2')
-          }
-          if (response.status === 200) {
-            document.getElementById('response-success').innerText = 'SUCCESS! Now you can Login.'
+            clearErrorMsg('error2')
+            break;
+          case 408:
+            document.getElementById('response-error2').innerText = 'Server timeout, please try later'
             e.target[5].children[0].classList.add('d-none')
-            // clearErrorMsg('success')
-          }
+            clearErrorMsg('error2')
+            break;
+          case 404:
+            document.getElementById('response-error2').innerText = 'The server is not available right now, please try later'
+            e.target[5].children[0].classList.add('d-none')
+            clearErrorMsg('error2')
+            break;
+          case 400:
+            document.getElementById('response-error2').innerText = 'Failure in request'
+            e.target[5].children[0].classList.add('d-none')
+            clearErrorMsg('error2')
+            break;
+          default:
+            console.log(error.response.data)
         }
-       )
-       console.log('all data is validated and ready to send to the server')
-      } else {
-        document.getElementById('response-error2').innerText = 'Not all validation tests passed, please correct your values'
-        e.target[5].children[0].classList.add('d-none')
-        // clearErrorMsg('error2')
-      }
-
-      // console.log(JSON.stringify(upValues))
+      })
+    } else {
+      document.getElementById('response-error2').innerText = 'Not all validation tests passed, please correct your values'
+      e.target[5].children[0].classList.add('d-none')
+      clearErrorMsg('error2')
     }
+  }
 
   const onChange = (e) => {
     setUpValues({...upValues, [e.target.name]: e.target.value})
