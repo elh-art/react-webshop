@@ -1,6 +1,5 @@
 import React from 'react'
 import FlashSale from '../components/FlashSale';
-import Footer from '../components/Footer';
 import HotSales from '../components/HotSales';
 import MiniCarousel from '../components/MiniCarousel';
 import NewArrivals from '../components/NewArrivals';
@@ -42,7 +41,6 @@ const Home = () => {
         fillertext="Check out our weekly top sellers in all category"/>
       <TopSellers />
       <SubscribeSection />
-      <Footer />
     </>
   )
 }
