@@ -3,9 +3,21 @@ footer {
   color: $color-white;
   height: 80px;
 
+  .container {
+    @include lg {
+      flex-direction: column;
+    }
+  }
+
   .available-payments {
+    gap: 10px;
+
     img {
-    margin-left: 10px;
+
+      @include lg {
+        max-width: 66px;
+        margin-bottom: 10px;
+      }
     }
   }
 }

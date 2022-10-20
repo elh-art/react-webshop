@@ -25,58 +25,36 @@
     }
   }
 
-  .site-settings {
-    height: 100%;
-    flex-direction: column;
-
-    select {
-      margin-right: 0.75rem;
-      border: none;
-      background: $color-white;
-      color: $color-theme;
-      cursor: pointer;
-
-      &:hover {
-        color: $color-dark-theme;
-      }
-    } 
-
-    @include lg {
-      flex-direction: row;
-    }
-  }
-  
   .search-bar {
-
+    height: 47px;
+    
     input {
       border-radius: 23.5px 0 0 23.5px;
-      border: 2px solid $color-gray;
+      border: 1px solid $color-grayish;
       border-right: none;
-      width: 250px;
+      width: 300px;
       outline: none;
     }
 
-    .dropdown button {
-      width: 150px;
+    button {
+      width: 47px;
       height: 47px;
-      background-color: $color-white;
-      border-radius: 0;
+      background-color: $color-theme;
+      border-radius: 0 50% 50% 0;
       color: $color-dark-theme;
-      border: 2px solid $color-gray;
+      border: 1px solid $color-grayish;
 
       &:focus {
         box-shadow: none;
       }
 
       i {
-        color: $color-instock;
+        color: $color-white-gray;
         font-weight: 700;
       }
     }
 
     .magnifier {
-      border-radius: 0 50% 50% 0;
-      width: 47px;
       
       .fa-magnifying-glass {
         &:active {
@@ -133,12 +111,16 @@
 }
 
 .main-menu {
-  border-top: 1px solid $color-gray;  
+  border-top: 1px solid $color-gray;
+  
+  .container {
+    height: 50px;
+  }
   
   .dropdown {
 
     button {
-    border-radius: 0;
+    border-radius: 5px;
 
     .fa-chevron-down {
       padding-left: 3rem;

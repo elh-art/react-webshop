@@ -43,6 +43,15 @@
       }
     }
 
+    .socialmedia {
+
+      margin-left: 24px;
+      
+      @include lg {
+        margin: 0;
+      }
+    }
+
     .socialmedia > a {
       padding: 5px 12px;
 

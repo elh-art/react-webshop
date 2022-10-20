@@ -16,11 +16,31 @@
     }
   }
 
-  .container .showcase_content p {
-    width: 380px;
+  .container .showcase_content {
 
-    @include md {
-      width: auto;
+    @include lg {
+      margin: auto;
+    }
+
+    h2 {
+      @include md {
+        margin: 5px;
+      }
+    }
+
+    p {
+     width: auto;
+ 
+     @include md {
+       width: auto;
+       margin: 5px;
+     }
+   }
+  }
+
+  .grey-box {
+    @include lg {
+      display: none;
     }
   }
 

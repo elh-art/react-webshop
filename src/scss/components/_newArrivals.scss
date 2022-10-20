@@ -1,27 +1,11 @@
-.less-than, 
-.greater-than {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  border: 3px solid $color-gray;
-  
-  .fa-less-than, 
-  .fa-greater-than {
-    position: absolute;
-    top: 8px;
-    color: $color-gray;
-    transform: scaleX(0.5);
-    font-weight: 300;
+.arrival-container {
 
-  }
+  @include lg {
+    flex-direction: column;
 
-  &:hover {
-    background-color: $color-theme;
-    border-color: $color-theme;
-    color: $color-white;
+    .box-arrival {
+      max-width: 330px;
+    }
   }
 }
 

@@ -7,6 +7,19 @@
   'Bexim Lighton'
   'Bexim Rosimo';
 
+  @include lg {
+    justify-content: center;
+
+    grid-template-areas:
+    'Bexim'
+    'Lighton'
+    'Rosimo';
+
+    .grid-topsell2, .grid-topsell1, .grid-topsell0 {
+      max-width: 330px;
+    }
+  }
+
   .grid-topsell2 {
     height: 100%;
   }
