@@ -2,6 +2,26 @@
   background-color: $color-grayish;
 
   .container {
+    text-align: center;
+
+    @include md {
+      display: block !important;
+
+      .thirty-off_content {
+        width: 100% !important;
+        height: 210px !important;
+      }
+
+      .thirty-off-sidepanel {
+        width: auto !important;
+        margin: 10px;
+
+        button {
+          margin-bottom: 35px;
+        }
+      }
+
+    }
     
     .thirty-off_content {
       width: 260px;

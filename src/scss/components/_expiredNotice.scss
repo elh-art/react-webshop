@@ -1,0 +1,14 @@
+.flash-sale-sidepanel {
+  .expired-notice {
+    color: $color-white;
+
+    span {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 1.33rem;
+      margin: 20px;
+    }
+  }
+}

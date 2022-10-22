@@ -7,13 +7,21 @@
       max-width: 330px;
     }
   }
+
+  @include xl {
+
+    .box-arrival {
+      min-width: 300px;
+    }
+  }
 }
 
 .box-arrival {
   position: relative;
   border-radius: 10px;
   background-color: $color-light-gray;
-  height: 400px;
+  height: 500px;
+  min-width: 370px;
   overflow: hidden;
   color: $color-white;
   

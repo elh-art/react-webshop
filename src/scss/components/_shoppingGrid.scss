@@ -1,8 +1,10 @@
-.grid-item1 { grid-area: Men; overflow: hidden;}
-.grid-item2 { grid-area: Women; overflow: hidden;}
-.grid-item3 { grid-area: Kids; overflow: hidden;}
-.grid-item4 { grid-area: Accessories; overflow: hidden;}
-.grid-item5 { grid-area: BuyNow; overflow: hidden;}
+.grid-item1 { grid-area: Men; overflow: hidden; background-image: url("https://images.unsplash.com/photo-1507253831417-37c43a944f51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");}
+.grid-item2 { grid-area: Women; overflow: hidden;; background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80");}
+.grid-item3 { grid-area: Kids; overflow: hidden;; background-image: url("https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=601&q=80");}
+.grid-item4 { grid-area: Accessories; overflow: hidden;; background-image: url("https://images.unsplash.com/photo-1576053139778-7e32f2ae3cfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFzaGlvbiUyMGFjY2Vzc29yaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");}
+.grid-item5 { grid-area: BuyNow; overflow: hidden;; background-image: url("https://images.unsplash.com/photo-1577538928305-3807c3993047?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");}
+
+
 
 .shopping-grid {
   .grid {
@@ -35,9 +37,13 @@
 
     > a {
       background-color: $color-gray;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       position: relative;
       border-radius: 5px;
       font-size: 1.875rem;
+
 
       &:hover {
         .grid-pack {

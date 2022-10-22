@@ -1,7 +1,11 @@
 .showcase {
   background-color: $color-light-gray;
-
+  
   .container .showcaseBigImg {
+    width: 50%;
+    height: 650px;
+    object-fit: cover; 
+    object-position: center bottom;
 
     @include xl {
       width: 444px;

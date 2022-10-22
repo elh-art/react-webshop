@@ -11,6 +11,11 @@ import TopSellers from "../components/TopSellers"
 import WebShopInfo from "../components/WebShopInfo"
 
 const Home = () => {
+  const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000
+  const NOW_IN_MS = new Date().getTime()
+
+  const dateTimeAfterThreeDays = NOW_IN_MS + SEVEN_DAYS_IN_MS
+
   return (
     <>
       <ShowCase />
@@ -34,7 +39,7 @@ const Home = () => {
         fillertext="Check out our monthly featured products from top brands"
       />
       <HotSales />
-      <FlashSale />
+      <FlashSale targetDate={dateTimeAfterThreeDays} />
       <ShopByCategory
         header1="TOP"
         header2="SELLERS"
