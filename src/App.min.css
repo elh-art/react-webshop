@@ -250,10 +250,6 @@ footer .available-payments {
 .mid-menu .container .account-wishlist a:hover {
   color: #fe4545;
 }
-.mid-menu .container .account-wishlist a:last-child {
-  text-align: end;
-  width: 55px;
-}
 .mid-menu .container .search-bar {
   height: 47px;
 }
@@ -313,7 +309,8 @@ footer .available-payments {
   border-radius: 50%;
   background-color: #20d3c2;
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: bold;
   text-align: center;
   line-height: 18px;
 }
@@ -894,6 +891,74 @@ footer .available-payments {
 .flash-sale-sidepanel .expired-notice p {
   font-size: 1.33rem;
   margin: 20px;
+}
+
+.cart-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.cart-container .cart_box img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart-container .cart_img {
+  display: flex;
+  width: 400px;
+}
+.cart-container .cart_img p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.cart-container .cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid skyblue;
+  padding-bottom: 5px;
+}
+.cart-container .cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.cart-container .cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #20d3c2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-container .cart_box div:nth-child(3) button:hover {
+  background-color: darkseagreen;
+}
+.cart-container .cart_box div:nth-child(3) span {
+  background-color: #64cb83;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.cart-container .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.cart-container .total span:nth-child(1) {
+  font-size: 2rem;
+  color: #20d3c2;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.cart-container .total span:nth-child(2) {
+  font-size: 2rem;
+  color: #64cb83;
+  font-weight: bold;
 }
 
 body {

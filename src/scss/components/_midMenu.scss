@@ -15,12 +15,6 @@
 
       &:hover {
         color: $color-outofstock;
-
-      }
-
-      &:last-child {
-        text-align: end;
-        width: 55px;
       }
     }
   }
@@ -97,7 +91,8 @@
         border-radius: 50%;
         background-color: $color-theme;
         color: $color-white;
-        font-size: 8px;
+        font-size: 12px;
+        font-weight: bold;
         text-align: center;
         line-height: 18px;
       }

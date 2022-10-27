@@ -13,7 +13,8 @@
     "hotProduct":false,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":2,
@@ -29,7 +30,8 @@
     "hotProduct":false,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":3,
@@ -45,7 +47,8 @@
     "hotProduct":false,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":4,
@@ -53,7 +56,7 @@
     "category":"Fashion",
     "oldPrice":220,
     "newPrice":190,
-    "rating": 5,
+    "rating": 3,
     "image": "https://images.unsplash.com/photo-1612096536102-93f503aa2419?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "new":true,
     "newArrival":false,
@@ -61,7 +64,8 @@
     "hotProduct":true,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":5,
@@ -69,7 +73,7 @@
     "category":"Fashion",
     "oldPrice":210,
     "newPrice":183,
-    "rating": 3,
+    "rating": 4,
     "image": "https://images.unsplash.com/photo-1520367745676-56196632073f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "new":false,
     "newArrival":false,
@@ -77,7 +81,8 @@
     "hotProduct":false,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": "-50%"
+    "onSaleBy": "-50%",
+    "amount": 1
   },
   {
     "id":6,
@@ -85,7 +90,7 @@
     "category":"Fashion",
     "oldPrice":43,
     "newPrice":33,
-    "rating":5,
+    "rating":1,
     "image": "https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "new":false,
     "newArrival":false,
@@ -93,7 +98,8 @@
     "hotProduct":false,
     "topSeller":false,
     "banner": "",
-    "onSaleBy": "-30%"
+    "onSaleBy": "-30%",
+    "amount": 1
   },
   {
     "id":7,
@@ -109,7 +115,8 @@
     "hotProduct":false,
     "topSeller":true,
     "banner": "/pictures/Bexim.png",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":8,
@@ -117,7 +124,7 @@
     "category":"Fashion",
     "oldPrice":123,
     "newPrice":99,
-    "rating":5,
+    "rating":4,
     "image": "https://images.unsplash.com/photo-1637868796504-32f45a96d5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "new":false,
     "newArrival":false,
@@ -125,7 +132,8 @@
     "hotProduct":false,
     "topSeller":true,
     "banner": "/pictures/Lighton.png",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   },
   {
     "id":9,
@@ -133,7 +141,7 @@
     "category":"Fashion",
     "oldPrice":29,
     "newPrice":23,
-    "rating":5,
+    "rating":3,
     "image": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "new":false,
     "newArrival":false,
@@ -141,6 +149,7 @@
     "hotProduct":false,
     "topSeller":true,
     "banner": "/pictures/Rosimo.png",
-    "onSaleBy": ""
+    "onSaleBy": "",
+    "amount": 1
   }
 ]

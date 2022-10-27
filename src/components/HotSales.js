@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import local_json from "../assets/products.json"
 import Card from "./Card"
 
-const HotSales = () => {
+const HotSales = ({ handleClickOnCart }) => {
   const [products, setProducts] = useState(local_json)
 
   return (
@@ -12,7 +12,12 @@ const HotSales = () => {
           {products.map(
             (product) =>
               product.featured && (
-                <Card key={product.id} product={product} products={products} />
+                <Card
+                  key={product.id}
+                  product={product}
+                  products={products}
+                  handleClickOnCart={handleClickOnCart}
+                />
               )
           )}
         </div>

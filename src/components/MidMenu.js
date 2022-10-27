@@ -1,7 +1,11 @@
-import React from "react"
+import React, { useContext } from "react"
 import { NavLink } from "react-router-dom"
+import { CartContext, PriceContext } from "../App"
 
 const MidMenu = () => {
+  const { cart } = useContext(CartContext)
+  const { price } = useContext(PriceContext)
+
   return (
     <>
       <section className="mid-menu navbar navbar-expand-lg">
@@ -14,10 +18,7 @@ const MidMenu = () => {
                   className="my-account d-flex justify-content-between align-items-center"
                 >
                   <i className="fa-light fa-user"></i>
-                  <span className="fs-6 ms-2">My account</span>
-                </NavLink>
-                <NavLink to="wishlist">
-                  <i className="fal fa-heart"></i>
+                  <span className="fs-6 ms-2">My Account</span>
                 </NavLink>
               </div>
 
@@ -33,8 +34,8 @@ const MidMenu = () => {
               </div>
 
               <div className="shopping d-flex align-items-center justify-content-between">
-                <NavLink to="compare" className="shopping-height">
-                  <i className="fa-light fa-random position-relative">
+                <NavLink to="wishlist">
+                  <i className="fa-light fa-heart position-relative">
                     <small className="shoppingamount position-absolute">
                       0
                     </small>
@@ -44,13 +45,13 @@ const MidMenu = () => {
                   to="shopping-cart"
                   className="shopping-height d-flex align-items-center justify-content-between"
                 >
-                  <i className="fal fa-shopping-bag position-relative">
+                  <i className="fa-light fa-cart-shopping position-relative">
                     <small className="shoppingamount position-absolute">
-                      0
+                      {cart.length}
                     </small>
                   </i>
                 </NavLink>
-                <div className="priceofgoods fs-6 ">$999.00</div>
+                <div className="priceofgoods fs-6 ">$ {price}</div>
               </div>
             </div>
           </div>
