@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react"
-import { CartContext, PriceContext } from "../App"
-import { handlePrice } from "../assets/HelperFunctions"
+import { CartContext, PriceContext, WishContext } from "../App"
 
 const Cart = () => {
   const { cart, setCart } = useContext(CartContext)
+  const { wishList, setWishList } = useContext(WishContext)
   const { price, setPrice } = useContext(PriceContext)
 
   const handleChange = (item, d) => {
@@ -20,6 +20,11 @@ const Cart = () => {
     handlePrice()
   }
 
+  const handleRemoveWish = (id) => {
+    const filteredArr = wishList.filter((item) => item[0].id !== id)
+    setWishList(filteredArr)
+  }
+
   const handlePrice = () => {
     let sumPrice = 0
     cart.map((item) => (sumPrice += item[0].amount * item[0].newPrice))
@@ -32,6 +37,29 @@ const Cart = () => {
 
   return (
     <div className="container cart-container">
+
+     {wishList.length > 0 && 
+      <h1 className="cart-text-header">Your Wish List:</h1> }
+      {wishList.map((item) => (
+        <div className="cart_box" key={item[0].id}>
+          <div className="cart_img">
+            <img src={item[0].image} alt="" />
+            <p>{item[0].name}</p>
+          </div>
+          <div>
+            <button><i
+            className="fa-regular fa-cart-shopping"
+            // onClick={(item) => handleClickOnCart(item)}
+          ></i></button>
+          </div>
+          <div>
+            <span>{item[0].newPrice} $</span>
+            <button onClick={() => handleRemoveWish(item[0].id)}>Remove</button>
+          </div>
+        </div>
+      ))}
+     {cart.length > 0 && 
+      <h1 className="cart-text-header">Your Shopping Cart:</h1> }
       {cart.map((item) => (
         <div className="cart_box" key={item[0].id}>
           <div className="cart_img">
@@ -49,10 +77,12 @@ const Cart = () => {
           </div>
         </div>
       ))}
+     {cart.length > 0 && 
       <div className="total">
-        <span>Total Price of your Cart</span>
+        <span>Total Price of Your Cart</span>
         <span>$ {price}</span>
-      </div>
+        <button>Order</button>
+      </div> }
     </div>
   )
 }

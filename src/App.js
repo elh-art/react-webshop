@@ -12,9 +12,11 @@ import Cart from "./components/Cart"
 
 export const CartContext = React.createContext()
 export const PriceContext = React.createContext()
+export const WishContext = React.createContext()
 
 function App() {
   const [cart, setCart] = useState([])
+  const [wishList, setWishList] = useState([])
   const [price, setPrice] = useState(0)
 
   const handlePrice = () => {
@@ -30,22 +32,24 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <PriceContext.Provider value={{ price, setPrice }}>
-          <CartContext.Provider value={{ cart, setCart }}>
-            <header>
-              <TopMenu />
-              <MidMenu />
-            </header>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/account" element={<Account />} />
-              <Route path="/myaccount" element={<MyAccount />} />
-              <Route path="/shopping-cart" element={<Cart />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
-          </CartContext.Provider>
-        </PriceContext.Provider>
+        <WishContext.Provider value={{ wishList, setWishList }}>
+          <PriceContext.Provider value={{ price, setPrice }}>
+            <CartContext.Provider value={{ cart, setCart }}>
+              <header>
+                <TopMenu />
+                <MidMenu />
+              </header>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/account" element={<Account />} />
+                <Route path="/myaccount" element={<MyAccount />} />
+                <Route path="/shopping-cart" element={<Cart />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <Footer />
+            </CartContext.Provider>
+          </PriceContext.Provider>
+        </WishContext.Provider>
       </BrowserRouter>
     </>
   )

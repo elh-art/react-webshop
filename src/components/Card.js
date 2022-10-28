@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 import { generateStars, shortName } from "../assets/HelperFunctions"
 
-const Card = ({ product, products, handleClickOnCart }) => {
+const Card = ({ product, products, handleClickOnCart, handleClickOnWish }) => {
   const allStars = generateStars(product.rating)
   const shortendName = shortName(product)
 
@@ -26,8 +26,10 @@ const Card = ({ product, products, handleClickOnCart }) => {
           <p className="new-price">{product.newPrice} $</p>
         </div>
         <div className="flying-tab">
-          <i className="fa-solid fa-circle"></i>
-          <i className="fal fa-heart"></i>
+          <i
+            className="fal fa-heart"
+            onClick={(item) => handleClickOnWish(item)}
+          ></i>
           <NavLink to={shortName}>
             <i className="fa-light fa-magnifying-glass"></i>{" "}
           </NavLink>

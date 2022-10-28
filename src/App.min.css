@@ -897,6 +897,14 @@ footer .available-payments {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.cart-container .cart-text-header {
+  font-family: "Roboto", sans-serif;
+  color: #20d3c2;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
 .cart-container .cart_box img {
   width: 50px;
   height: 50px;
@@ -947,12 +955,13 @@ footer .available-payments {
 .cart-container .total {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .cart-container .total span:nth-child(1) {
-  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
   color: #20d3c2;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 .cart-container .total span:nth-child(2) {

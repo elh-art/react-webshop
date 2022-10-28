@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import local_json from "../assets/products.json"
 import Card from "./Card"
 
-const NewArrivals = ({ handleClickOnCart }) => {
+const NewArrivals = ({ handleClickOnCart, handleClickOnWish }) => {
   const [products, setProducts] = useState(local_json)
 
   return (
@@ -17,6 +17,7 @@ const NewArrivals = ({ handleClickOnCart }) => {
                   product={product}
                   products={products}
                   handleClickOnCart={handleClickOnCart}
+                  handleClickOnWish={handleClickOnWish}
                 />
               )
           )}
