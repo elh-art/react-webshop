@@ -9,7 +9,7 @@ const ShowCase = () => {
           <div className="showcase_content my-4">
             <img
               className="showcaseImg mb-4 pb-3"
-              src={require("../images/Shopping_is_MOR.png")}
+              src={require("../../images/Shopping_is_MOR.png")}
               alt="Picture with text: shopping is more"
             />
             <p className="mb-4 pb-4 fs-6">

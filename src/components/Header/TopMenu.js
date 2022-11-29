@@ -9,7 +9,10 @@ const TopMenu = () => {
           <NavLink to="/">
             <h1 className="fs-2 m-0">
               ZEN
-              <img src={require("../images/Path_8.png")} alt="company logo" />
+              <img
+                src={require("../../images/Path_8.png")}
+                alt="company logo"
+              />
               MODE
             </h1>
           </NavLink>

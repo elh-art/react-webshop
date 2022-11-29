@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom"
-import SignIn from "../components/SignIn"
-import SignUp from "../components/SignUp"
+import SignIn from "../components/Account/SignIn"
+import SignUp from "../components/Account/SignUp"
 
 const Account = () => {
   const [token, setToken] = useState()

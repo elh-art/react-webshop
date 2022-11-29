@@ -1,10 +1,11 @@
 import React, { useContext } from "react"
 import { NavLink } from "react-router-dom"
-import { CartContext, PriceContext } from "../App"
+import { CartContext, PriceContext, WishContext } from "../../App"
 
 const MidMenu = () => {
   const { cart } = useContext(CartContext)
   const { price } = useContext(PriceContext)
+  const { wishList } = useContext(WishContext)
 
   return (
     <>
@@ -34,10 +35,10 @@ const MidMenu = () => {
               </div>
 
               <div className="shopping d-flex align-items-center justify-content-between">
-                <NavLink to="wishlist">
+                <NavLink to="shopping-cart">
                   <i className="fa-light fa-heart position-relative">
                     <small className="shoppingamount position-absolute">
-                      0
+                      {wishList.length}
                     </small>
                   </i>
                 </NavLink>

@@ -1,16 +1,16 @@
 import React, { useContext } from "react"
-import FlashSale from "../components/FlashSale"
-import HotSales from "../components/HotSales"
-import NewArrivals from "../components/NewArrivals"
-import ShopByCategory from "../components/ShopByCategory"
-import ShoppingGrid from "../components/ShoppingGrid"
-import ShowCase from "../components/ShowCase"
-import SubscribeSection from "../components/SubscribeSection"
-import ThirtyOff from "../components/ThirtyOff"
-import TopSellers from "../components/TopSellers"
-import WebShopInfo from "../components/WebShopInfo"
-import local_json from "../assets/products.json"
 import { CartContext, WishContext } from "../App"
+import { handleClickOnX } from "../assets/HelperFunctions"
+import FlashSale from "../components/Home/FlashSale/FlashSale"
+import HotSales from "../components/Home/HotSales"
+import NewArrivals from "../components/Home/NewArrivals"
+import ShopByCategory from "../components/Home/ShopByCategory"
+import ShoppingGrid from "../components/Home/ShoppingGrid"
+import ShowCase from "../components/Home/ShowCase"
+import SubscribeSection from "../components/Home/SubscribeSection"
+import ThirtyOff from "../components/Home/ThirtyOff"
+import TopSellers from "../components/Home/TopSellers"
+import WebShopInfo from "../components/Home/WebShopInfo/WebShopInfo"
 
 const Home = () => {
   const { cart, setCart } = useContext(CartContext)
@@ -23,24 +23,11 @@ const Home = () => {
 
   //Filling Cart functionality
   const handleClickOnCart = (item) => {
-    const selectedCardId = parseInt(item.target.parentNode.parentNode.id)
-    const selectedCardObj = local_json.filter(
-      (obj) => obj.id === selectedCardId
-    )
-    //Product can be placed into cart only once:
-    const selectedCardAgain = cart.some((item) => item[0].id === selectedCardId)
-    if (selectedCardAgain === false) setCart([...cart, selectedCardObj])
+    handleClickOnX(item, cart, setCart)
   }
 
   const handleClickOnWish = (item) => {
-    const selectedCardId = parseInt(item.target.parentNode.parentNode.id)
-    const selectedCardObj = local_json.filter(
-      (obj) => obj.id === selectedCardId
-    )
-    const selectedCardAgain = wishList.some(
-      (item) => item[0].id === selectedCardId
-    )
-    if (selectedCardAgain === false) setWishList([...wishList, selectedCardObj])
+    handleClickOnX(item, wishList, setWishList)
   }
 
   return (

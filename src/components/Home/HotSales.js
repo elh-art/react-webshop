@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import local_json from "../assets/products.json"
-import Card from "./Card"
+import local_json from "../../assets/products.json"
+import Card from "../Card"
 
-const NewArrivals = ({ handleClickOnCart, handleClickOnWish }) => {
+const HotSales = ({ handleClickOnCart, handleClickOnWish }) => {
   const [products, setProducts] = useState(local_json)
 
   return (
@@ -11,7 +11,7 @@ const NewArrivals = ({ handleClickOnCart, handleClickOnWish }) => {
         <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           {products.map(
             (product) =>
-              product.newArrival && (
+              product.featured && (
                 <Card
                   key={product.id}
                   product={product}
@@ -27,4 +27,4 @@ const NewArrivals = ({ handleClickOnCart, handleClickOnWish }) => {
   )
 }
 
-export default NewArrivals
+export default HotSales

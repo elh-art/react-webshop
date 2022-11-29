@@ -1,17 +1,17 @@
 import React, { useState } from "react"
-import local_json from "../assets/products.json"
-import Card from "./Card"
+import local_json from "../../assets/products.json"
+import Card from "../Card"
 
-const TopSellers = ({ handleClickOnCart, handleClickOnWish }) => {
+const NewArrivals = ({ handleClickOnCart, handleClickOnWish }) => {
   const [products, setProducts] = useState(local_json)
 
   return (
     <>
       <div className="arrivals d-flex justify-content-center align-items-center">
-        <div className="topsellers-grid container d-grid gap-3 p-0 my-5 mx-0">
+        <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           {products.map(
             (product) =>
-              product.topSeller && (
+              product.newArrival && (
                 <Card
                   key={product.id}
                   product={product}
@@ -27,4 +27,4 @@ const TopSellers = ({ handleClickOnCart, handleClickOnWish }) => {
   )
 }
 
-export default TopSellers
+export default NewArrivals

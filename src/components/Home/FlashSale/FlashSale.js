@@ -1,6 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import { useCountdown } from "../assets/useCountdown"
+import { useCountdown } from "../../../assets/useCountdown"
 import ExpiredNotice from "./ExpiredNotice"
 import ShowCounter from "./ShowCounter"
 
@@ -14,7 +14,7 @@ const FlashSale = ({ targetDate }) => {
           <div className="flash-sale_content d-flex flex-column position-absolute top-0 start-0">
             <img
               className="flash-saleImg mt-5 ms-4"
-              src={require("../images/Flash_sale.png")}
+              src={require("../../../images/Flash_sale.png")}
               alt="Picture with text: flash-sale"
             />
             <p className="fs-3 mt-4 ms-5">UP TO 50% OFF</p>

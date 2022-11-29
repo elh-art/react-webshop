@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import FormInput from "./FormInput"
-import formInputs from "../assets/formInputs.json"
+import formInputs from "../../assets/formInputs.json"
+import { isHidden, clearErrorMsg } from "../../assets/HelperFunctions"
 import axios from "axios"
-import { isHidden, clearErrorMsg } from "../assets/HelperFunctions"
+import FormInput from "./FormInput"
 
 const SignUp = () => {
   const [upValues, setUpValues] = useState({

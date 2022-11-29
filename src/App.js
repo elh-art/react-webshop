@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import React, { useState, useEffect } from "react"
+import { handlePrice } from "./assets/HelperFunctions"
 import "./App.min.css"
-import TopMenu from "./components/TopMenu"
-import MidMenu from "./components/MidMenu"
+import TopMenu from "./components/Header/TopMenu"
+import MidMenu from "./components/Header/MidMenu"
 import Home from "./view/Home"
 import Account from "./view/Account"
 import NotFound from "./view/NotFound"
-import Footer from "./components/Footer"
-import MyAccount from "./components/MyAccount"
-import Cart from "./components/Cart"
+import Footer from "./view/Footer"
+import MyAccount from "./view/MyAccount"
+import Cart from "./view/Cart"
 
 export const CartContext = React.createContext()
 export const PriceContext = React.createContext()
@@ -19,14 +20,8 @@ function App() {
   const [wishList, setWishList] = useState([])
   const [price, setPrice] = useState(0)
 
-  const handlePrice = () => {
-    let sumPrice = 0
-    cart.map((item) => (sumPrice += item[0].amount * item[0].newPrice))
-    setPrice(sumPrice)
-  }
-
   useEffect(() => {
-    handlePrice()
+    handlePrice(cart, setPrice)
   })
 
   return (
