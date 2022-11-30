@@ -10,6 +10,7 @@ import NotFound from "./view/NotFound"
 import Footer from "./view/Footer"
 import MyAccount from "./view/MyAccount"
 import Cart from "./view/Cart"
+import Products from "./view/Products"
 
 export const CartContext = React.createContext()
 export const PriceContext = React.createContext()
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/account" element={<Account />} />
                 <Route path="/myaccount" element={<MyAccount />} />
                 <Route path="/shopping-cart" element={<Cart />} />
+                <Route path="/products/:id" element={<Products />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

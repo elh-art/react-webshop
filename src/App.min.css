@@ -522,6 +522,18 @@ footer .available-payments {
 .box-arrival .hot-product {
   background-color: #fe4545;
 }
+.box-arrival .corp-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 80px;
+  width: 180px;
+  background-color: #fff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+  z-index: 0;
+}
 
 .shop-by-category {
   width: 50%;
@@ -798,39 +810,6 @@ footer .available-payments {
   padding-right: 0;
 }
 
-.grid-topsell2 {
-  grid-area: Bexim;
-}
-
-.grid-topsell1 {
-  grid-area: Lighton;
-}
-
-.grid-topsell0 {
-  grid-area: Rosimo;
-}
-
-.topsellers-grid {
-  grid-template-areas: "Bexim Lighton" "Bexim Rosimo";
-}
-@media (max-width: 992px) {
-  .topsellers-grid {
-    justify-content: center;
-    grid-template-areas: "Bexim" "Lighton" "Rosimo";
-  }
-  .topsellers-grid .grid-topsell2, .topsellers-grid .grid-topsell1, .topsellers-grid .grid-topsell0 {
-    max-width: 330px;
-  }
-}
-.topsellers-grid .grid-topsell2 {
-  height: 100%;
-}
-.topsellers-grid .grid-topsell1, .topsellers-grid .grid-topsell0 {
-  height: 350px;
-}
-.topsellers-grid .topsellers-img {
-  max-height: 710px;
-}
 .topsellers-grid .corp-logo {
   position: absolute;
   top: 25px;

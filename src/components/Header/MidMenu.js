@@ -74,6 +74,11 @@ const MidMenu = () => {
             </button>
             <ul className="dropdown-menu" aria-labelledby="main-menu-dropdown">
               <li>
+                <NavLink to="products/collection" className="dropdown-item">
+                  Our Collection
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to="products/men" className="dropdown-item">
                   Men
                 </NavLink>

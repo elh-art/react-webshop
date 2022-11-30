@@ -8,12 +8,7 @@ const Card = ({ product, products, handleClickOnCart, handleClickOnWish }) => {
 
   return (
     <>
-      <div
-        id={product.id}
-        className={
-          "box-arrival grid-topsell" + `${products.length - product.id}`
-        }
-      >
+      <div id={product.id} className={"box-arrival"}>
         <NavLink to={shortendName}>
           {" "}
           <div className="box-dark"></div>{" "}

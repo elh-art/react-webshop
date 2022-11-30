@@ -205,4 +205,16 @@
   .hot-product {
     background-color: $color-outofstock;
   }
+
+  .corp-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 80px;
+    width: 180px;
+    background-color: $color-white;
+    object-fit: contain;
+    padding: 20px;
+    z-index: 0; 
+  }
 }

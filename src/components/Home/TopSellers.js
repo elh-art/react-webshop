@@ -8,7 +8,7 @@ const TopSellers = ({ handleClickOnCart, handleClickOnWish }) => {
   return (
     <>
       <div className="arrivals d-flex justify-content-center align-items-center">
-        <div className="topsellers-grid container d-grid gap-3 p-0 my-5 mx-0">
+        <div className="arrival-container container d-flex justify-content-between align-items-center p-0 gap-2 mx-3 mt-5 mb-4">
           {products.map(
             (product) =>
               product.topSeller && (
