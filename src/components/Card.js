@@ -1,15 +1,14 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import { generateStars, shortName } from "../assets/HelperFunctions"
+import { generateStars } from "../assets/HelperFunctions"
 
-const Card = ({ product, products, handleClickOnCart, handleClickOnWish }) => {
+const Card = ({ product, handleClickOnCart, handleClickOnWish }) => {
   const allStars = generateStars(product.rating)
-  const shortendName = shortName(product)
 
   return (
     <>
       <div id={product.id} className={"box-arrival"}>
-        <NavLink to={shortendName}>
+        <NavLink to={`/product/${product.id}`}>
           {" "}
           <div className="box-dark"></div>{" "}
         </NavLink>
@@ -25,7 +24,7 @@ const Card = ({ product, products, handleClickOnCart, handleClickOnWish }) => {
             className="fal fa-heart"
             onClick={(item) => handleClickOnWish(item)}
           ></i>
-          <NavLink to={shortName}>
+          <NavLink to={`/product/${product.id}`}>
             <i className="fa-light fa-magnifying-glass"></i>{" "}
           </NavLink>
           <i

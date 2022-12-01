@@ -6,7 +6,7 @@ import Card from "../components/Card"
 import { useParams } from "react-router-dom"
 
 const Products = () => {
-  const [products, setProducts] = useState(local_json)
+  const [products] = useState(local_json)
   const { cart, setCart } = useContext(CartContext)
   const { wishList, setWishList } = useContext(WishContext)
   const { id } = useParams()

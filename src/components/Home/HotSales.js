@@ -3,7 +3,7 @@ import local_json from "../../assets/products.json"
 import Card from "../Card"
 
 const HotSales = ({ handleClickOnCart, handleClickOnWish }) => {
-  const [products, setProducts] = useState(local_json)
+  const [products] = useState(local_json)
 
   return (
     <>

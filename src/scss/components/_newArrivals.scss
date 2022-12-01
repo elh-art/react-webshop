@@ -21,7 +21,7 @@
   border-radius: 10px;
   background-color: $color-light-gray;
   height: 500px;
-  min-width: 370px;
+  width: 370px;
   overflow: hidden;
   color: $color-white;
   
@@ -184,11 +184,13 @@
     .old-price {
       bottom: 45px;
       z-index: 2;
+      padding-left: 0;
     }
 
     .new-price {
       bottom: 0px;
       z-index: 2;
+      padding-left: 0;
     }
 
     .flying-tab {

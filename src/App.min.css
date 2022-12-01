@@ -365,7 +365,7 @@ footer .available-payments {
   border-radius: 10px;
   background-color: #eee;
   height: 500px;
-  min-width: 370px;
+  width: 370px;
   overflow: hidden;
   color: #fff;
 }
@@ -506,10 +506,12 @@ footer .available-payments {
 .box-arrival:hover .old-price {
   bottom: 45px;
   z-index: 2;
+  padding-left: 0;
 }
 .box-arrival:hover .new-price {
   bottom: 0px;
   z-index: 2;
+  padding-left: 0;
 }
 .box-arrival:hover .flying-tab {
   z-index: 2;
@@ -810,19 +812,6 @@ footer .available-payments {
   padding-right: 0;
 }
 
-.topsellers-grid .corp-logo {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  height: 80px;
-  width: 180px;
-  background-color: #fff;
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding: 20px;
-  z-index: 0;
-}
-
 .webshop-info .container-fluid .infobox {
   display: flex;
   align-items: center;
@@ -974,6 +963,34 @@ footer .available-payments {
   font-size: 2rem;
   color: #64cb83;
   font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .product-details {
+    justify-content: center !important;
+  }
+}
+.product-details .single-product {
+  max-width: 850px;
+}
+.product-details .single-product h2 {
+  font-family: "Play", sans-serif;
+}
+.product-details .single-product h4 {
+  color: #fe4545;
+  font-weight: 700;
+}
+.product-details .single-product h4 span {
+  color: #0e153d;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.product-details .single-product .buying-options {
+  font-size: 1.1em;
+}
+.product-details .single-product .buying-options i:hover {
+  color: #fe4545;
+  cursor: pointer;
 }
 
 body {

@@ -11,6 +11,7 @@ import Footer from "./view/Footer"
 import MyAccount from "./view/MyAccount"
 import Cart from "./view/Cart"
 import Products from "./view/Products"
+import Product from "./view/Product"
 
 export const CartContext = React.createContext()
 export const PriceContext = React.createContext()
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/myaccount" element={<MyAccount />} />
                 <Route path="/shopping-cart" element={<Cart />} />
                 <Route path="/products/:id" element={<Products />} />
+                <Route path="/product/:id" element={<Product />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

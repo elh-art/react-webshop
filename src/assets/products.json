@@ -2,6 +2,8 @@
   {
     "id":1,
     "name":"Blue silk flare sleeved top bottom",
+    "description": "Introducing your newest wardrobe staple: this wide leg jumpsuit. A classic cut that lengthens the leg and accentuates the waistline, flare leg jumpsuits are known to be flattering to your curves. Complete with gathered sleeves, daring cut outs and pretty tie detailing, our collection is super practical and perfect for warmer weather. From classic black wide leg jumpsuits to linen-look styles, we’ve got something to match every vibe. Keep things simple with chunky sandals or take your look from day to night with barely-there heels. ",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"men",
     "oldPrice":50,
@@ -20,6 +22,8 @@
   {
     "id":2,
     "name":"Black silk flare sleeved top",
+    "description": "Introducing your new fave top from our latest collection of plus size tops. Chic, versatile, and the perfect addition to your new-season wardrobe, this style is everything you’ve been scrolling for. Pair with your fave jeans and chunky trainers for off-duty days or go all-out with wide leg trousers and statement heels. Want more? From wardrobe essentials like plus size shirts, to stand-out styles from our plus size party tops edit, find your everyday 'fits right here.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"women",
     "oldPrice":56,
@@ -38,6 +42,8 @@
   {
     "id":3,
     "name":"New look men's coat",
+    "description": "Stay warm in style with our men's parka coats. An essential choice for when winter rolls around, this men's parka is the ultimate piece to layer over hoodies, jumpers and t shirts. Whether you're loving a fur parka or keeping it simple in black, our offering of men's cagoules let's you experiment. Check out our new offerings of bold prints, fur hoods and cord finishes.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"men",
     "oldPrice":44,
@@ -56,6 +62,8 @@
   {
     "id":4,
     "name":"Winter collection for women's",
+    "description": "A wardrobe essential throughout December, come through this festive season and wrap up in this Christmas Jumper. Featuring long sleeves and an iconic festive print, this cosy Xmas jumper is a whole vibe no matter how you're spending the holidays. Traditonally designed to keep you warm and cosy during winter, a Xmas jumper is perfect for all your plans from family meet-ups to festive drinks. Looing for more designs? We've got you covered, our full range of women's Christmas jumpers for 2022 has something for everyone this season.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"women",
     "oldPrice":220,
@@ -73,7 +81,9 @@
   },
   {
     "id":5,
-    "name":"New look men's coat",
+    "name":"Old look men's coat",
+    "description": "Stay warm in style with our men's parka coats. An essential choice for when winter rolls around, this men's parka is the ultimate piece to layer over hoodies, jumpers and t shirts. Whether you're loving a fur parka or keeping it simple in black, our offering of men's cagoules let's you experiment. Check out our new offerings of bold prints, fur hoods and cord finishes.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"men",
     "oldPrice":210,
@@ -92,6 +102,8 @@
   {
     "id":6,
     "name":"Red women's blazer full",
+    "description": "A plus size blazer is the perfect layering piece. It’s an effortless choice to dress up a casual outfit, just layer it over your go-to jeans and t-shirt for an easy weekend look. With long sleeves and a tailored finish, a plus size longline blazer is our new season obsession to wear with matching trousers and statement heels. Whether you want an iconic black blazer or want to serve attitude in printed styles, our full collection of plus size women's blazers has it all.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"women",
     "oldPrice":43,
@@ -110,6 +122,8 @@
   {
     "id":7,
     "name":"Men's denim shirts full",
+    "description": "Introduce some subtle dapperness into your day-to-day lineup with a shirt. You'll be surprised at how easy it is to throw together a sophisticated ensemble with a plain shirt from our extensive range. If you want to look sharp by keeping it simple, pair a checked shirt with a blazer and skinny jeans. Finish off with Chelsea boots for an outfit that delivers dapperness from the office to the bar. If you are looking for the ultimate summer outfit, our selection of printed shirts will make sure you'll get noticed.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory":"men",
     "oldPrice":55,
@@ -128,6 +142,8 @@
   {
     "id":8,
     "name":"Men's leather wallet and belt",
+    "description": "Bag yourself a bargain and carry away your new men's backpack, bumbag or wallet. Carry on holdalls and travel essentials can all be found in the collection. Forget less is more, this season we're all for out-there statement pieces.",
+    "sizes": ["One Size"],
     "category":"Fashion",
     "subcategory": "accessories",
     "oldPrice":123,
@@ -146,6 +162,8 @@
   {
     "id":9,
     "name":"New look men's sneakers",
+    "description": "Men's trainers are the feature of every outfit. From men's high tops to chunky trainers, make sure your off-duty style stays on-trend with our latest offering. Mix it up with men's smart trainers for going out, seen in both black and white finishes. We've got casual trainers for men who wanna wear them everyday, worn best with joggers or jeans. From men's running trainers to slip on styles, your footwear game is about to get a whole lot hotter.",
+    "sizes": ["8", "9", "10"],
     "category":"Fashion",
     "subcategory": "accessories",
     "oldPrice":29,
@@ -164,6 +182,8 @@
   {
     "id": 10,
     "name":"Antique bracelet set",
+    "description": "Choose timeless elegance and make a simple style impact by adding a bracelet to your look. Worn around the wrist for a low-key look we high key love, this style the perfect addition to your jewellery collection. Want more? From delicate chain styles to vintage-inspired arm cuffs we've got the arm accessories to take your look to the next level.",
+    "sizes": ["One Size"],
     "category":"Fashion",
     "subcategory": "accessories",
     "oldPrice":33,
@@ -182,6 +202,8 @@
   {
     "id": 11,
     "name":"Boy leisure set",
+    "description": "Serve up some serious style points with this short co-ord set. An easy outfit to throw together, these shorts and matching top can be dressed up or down. Pair a blazer co-ord set with some strappy heels for a more formal look, or complete that jersey co-ord with some chunky kicks. Add some colour or print to your wardrobe with this matching set. We’ve got the year-round look for every occasion.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory": "kids",
     "oldPrice":56,
@@ -200,6 +222,8 @@
   {
     "id": 12,
     "name":"Unisex leisure set",
+    "description": "Hit refresh on your stay-at-home wardrobe with this loungewear set from our latest collection. Comfy, cosy, and perfect for Sunday chills, this women's lounge set is the only outfit you need to be wearing this season. Team with box-fresh trainers and an oversized trench coat for an athleisure vibe or pair with socks and sliders for ultimate weekend chills. From ribbed sets to knitted styles and co ords, our latest arrivals in women's loungewear have ultimate comfort covered.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory": "kids",
     "oldPrice":33,
@@ -218,6 +242,8 @@
   {
     "id": 13,
     "name":"Red girl outfit",
+    "description": "Coordination is key, and when it comes to a trouser co-ord set, it’s a match. This co-ord set comes with trousers and a matching top, tailored for that perfect fit that flatteringly accentuates the figure. Trouser co-ord sets are classic, timelessly fashionable, but better still, they’re a versatile addition to any wardrobe that can be worn separately or together as an outfit. However you choose to wear them, these pieces are your new go-to.",
+    "sizes": ["M", "S", "L", "XL", "XXL"],
     "category":"Fashion",
     "subcategory": "kids",
     "oldPrice":111,

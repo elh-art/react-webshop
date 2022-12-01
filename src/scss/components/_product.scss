@@ -1,0 +1,37 @@
+.product-details {
+
+    @include lg {
+      justify-content: center !important;
+    }
+
+  .single-product {
+    max-width: 850px;
+  
+    h2 {
+      font-family: "Play", sans-serif;
+    }
+  
+    h4 {
+      color: $color-outofstock;
+      font-weight: 700;
+  
+      span{
+        color: $color-dark-theme;
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+  
+    }
+  
+    .buying-options {
+      font-size: 1.1em;
+  
+      i {
+        &:hover {
+          color: $color-outofstock;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

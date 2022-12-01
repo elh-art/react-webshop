@@ -29,7 +29,7 @@ export const generateStars = (num) => {
 }
 
 //ShoppingCart helper functions
-export const shortName = (e) => e.name.replaceAll(" ", "_").replaceAll("'", "")
+// export const shortName = (e) => e.name.replaceAll(" ", "_").replaceAll("'", "")
 
 export const handlePrice = (cart, setPrice) => {
   let sumPrice = 0
